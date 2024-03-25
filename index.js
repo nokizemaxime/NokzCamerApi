@@ -1,5 +1,5 @@
 const express = require('express');
-const helmet = require('helmet');
+//const helmet = require('helmet');
 const app = express();
 
 // Middleware helmet pour sécuriser les en-têtes HTTP
@@ -289,10 +289,10 @@ app.get('/', (req, res) => {
 });
 
 // Fonction pour valider les données d'entrée
-function isValidRequest(req) {
-    // Vous pouvez ajouter des règles de validation supplémentaires ici
-    return true;
-}
+// function isValidRequest(req) {
+//     // Vous pouvez ajouter des règles de validation supplémentaires ici
+//     return true;
+// }
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
