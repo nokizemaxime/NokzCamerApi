@@ -3,7 +3,7 @@ const helmet = require('helmet');
 const app = express();
 
 // Middleware helmet pour sécuriser les en-têtes HTTP
-app.use(helmet());
+app.use();  //helmet()
 
 // Données statiques représentant les régions, villes et quartiers
 const regions = [
@@ -279,9 +279,9 @@ const regions = [
 // Route pour obtenir la liste des régions avec leurs villes et quartiers
 app.get('/', (req, res) => {
     // Validation des données d'entrée
-    if (!isValidRequest(req)) {
-        return res.status(400).json({ error: 'Bad request' });
-    }
+    // if (!isValidRequest(req)) {
+    //     return res.status(400).json({ error: 'Bad request' });
+    // }
 
     // Renvoyer les données régionales
     res.json(regions);
