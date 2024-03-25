@@ -3,7 +3,8 @@ const helmet = require('helmet');
 const app = express();
 
 // Middleware helmet pour sécuriser les en-têtes HTTP
-app.use();  //helmet()
+app.use();  
+//helmet()
 
 // Données statiques représentant les régions, villes et quartiers
 const regions = [
