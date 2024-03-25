@@ -1,10 +1,9 @@
 const express = require('express');
-//const helmet = require('helmet');
+const helmet = require('helmet');
 const app = express();
 
 // Middleware helmet pour sécuriser les en-têtes HTTP
-app.use();  
-//helmet()
+app.use(helmet());
 
 // Données statiques représentant les régions, villes et quartiers
 const regions = [
@@ -280,19 +279,19 @@ const regions = [
 // Route pour obtenir la liste des régions avec leurs villes et quartiers
 app.get('/', (req, res) => {
     // Validation des données d'entrée
-    // if (!isValidRequest(req)) {
-    //     return res.status(400).json({ error: 'Bad request' });
-    // }
+    if (!isValidRequest(req)) {
+        return res.status(400).json({ error: 'Bad request' });
+    }
 
     // Renvoyer les données régionales
     res.json(regions);
 });
 
 // Fonction pour valider les données d'entrée
-// function isValidRequest(req) {
-//     // Vous pouvez ajouter des règles de validation supplémentaires ici
-//     return true;
-// }
+function isValidRequest(req) {
+    // Vous pouvez ajouter des règles de validation supplémentaires ici
+    return true;
+}
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
