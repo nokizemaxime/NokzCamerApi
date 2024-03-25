@@ -1,0 +1,15 @@
+{
+  "name": "nokzcity",
+  "version": "1.0.0",
+  "description": "nokzcity est un backend qui permet de lister toute les regions du cameroun leurs villes et leurs quartiers respectifs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "maxime nokize",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.1",
+    "helmet": "^7.1.0"
+  }
+}
