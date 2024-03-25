@@ -277,7 +277,7 @@ const regions = [
 ];
 
 // Route pour obtenir la liste des régions avec leurs villes et quartiers
-app.get('/regions', (req, res) => {
+app.get('/', (req, res) => {
     // Validation des données d'entrée
     if (!isValidRequest(req)) {
         return res.status(400).json({ error: 'Bad request' });
