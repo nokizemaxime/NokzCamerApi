@@ -20,7 +20,7 @@ const regions = [
         cities: [
             {
                 name: 'Douala',
-                neighborhoods: ['Akwa', 'Bassa', 'Bonabéri']
+                neighborhoods: ['Akwa','Bonapriso','Bonandjo','Ndogpassi-Village','PK8','Logbessou','Makepe' ,'Bali', 'Bonabéri','Kotto','Yassa', 'Bepanda']
             },
             {
                 name: 'Nkongsamba',
@@ -53,7 +53,7 @@ const regions = [
         cities: [
             {
                 name: 'Yaoundé',
-                neighborhoods: ['Nlongkak', 'Ngoa Ekelle', 'Mokolo']
+                neighborhoods: ['Nlongkak', 'Ngoa Ekelle', 'Mokolo','Essos', 'Etoudi','Mvan','Simbog', 'Biyem-Assi', 'Efoulam']
             },
             {
                 name: 'Nanga-Eboko',
